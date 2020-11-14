@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Shooter Game</title>
+    <link rel="shortcut icon" href="./assets/img/characters/char_01.png" type="image/x-icon">        
+
+    <!-- sass compiled -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="./assets/css/main.css.map" />
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="./assets/css/materialdesignicons.css" />
+    <link href="./assets/css/materialdesignicons.css.map" />
+
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="./app/libs/swiper.css" />
+</head>
+
+<body>
+    <div id="app" class="app">
+
+
+
+
+
+
+        <!-- 
+            SPLASH PAGE
+            
+            Información sobre splash page.
+
+            -->
+        <section id="splash_page" class="full_window">
+            
+                <!-- Splash template -->
+                <h1 class="texto_centrado">Shaped Game Offline!</h1>                
+            
+        </section>
+
+
+
+
+
+
+
+        <!-- 
+            MAIN PAGE
+            
+            Página donde está alojado el juego
+            
+            -->
+        <section id="main_page" class="full_window">
+            <!-- Main page UI -->
+            <div class="ui">
+                <div class="lifes">
+                    <span class="amount">3</span>
+                    <span class="icon">
+                        <span class="mdi mdi-cards-heart"></span>
+                    </span>
+                </div>
+                <div class="score">
+                    <span class="amount">3</span>
+                    <span class="icon">
+                        <span class="mdi mdi-star"></span>
+                    </span>
+                </div>
+                <div class="pause">
+                    <a href="#modal_pause_window" class="pause_btn" id="pause" navigation-type="modal" animation-type="pause_modal">
+                        <span class="mdi mdi-pause-circle-outline"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- Main page Juego!! -->
+            <div class="game">
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- 
+            VENTANA MODAL PAUSA
+            
+            Ventana modal de pausa
+            
+            -->
+        <section id="modal_pause_window" class="modal_window modal_light">
+            <!-- modal overlay -->
+            <div class="overlay"></div>
+            <!-- modal holder -->
+            <div class="holder">
+                <!-- modal settings -->
+                <div class="settings">
+                    <div class="setting">
+                        <div class="agrupe">
+                            <div class="setting_icon">
+                                <span class="mdi mdi-volume-high"></span>
+                            </div>
+                            <div class="setting_label">
+                                Background music
+                            </div>
+                        </div>
+                        <div class="setting_toggle">
+                            <img src="./assets/img/check2.png" class="check" alt="chequear">
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="agrupe unico">
+                            <div class="setting_icon">
+                                <span class="mdi mdi-music-note-eighth"></span>
+                            </div>
+                            <div class="setting_label">
+                                Action sounds
+                            </div>
+                        </div>
+                        <div class="setting_toggle">
+                            <img src="./assets/img/check2.png" class="check" alt="chequear">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal ctas -->
+                <a class="btn btn_primary" href="#main_page" navigation-type="modal" animation-type="resume_modal">
+                    <img src="./assets/img/boton2.png" class="back" alt="back_game">
+                </a>
+                <a class="btn btn_secondary" href="#modal_confirm" navigation-type="modal" animation-type="confirm_modal_in">
+                    <img src="./assets/img/boton3.png" class="quick" alt="quick_game">
+                </a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- 
+            VENTANA MODAL CONFIRMACIÓN
+            
+            Ventana modal de confirmación
+            
+            -->
+        <section id="modal_confirm" class="modal_window">
+            <!-- modal overlay -->
+            <div class="overlay"></div>
+            <!-- modal holder -->
+            <div class="holder">
+                <!-- modal message -->
+                <div class="message">
+                    If you quit the game, you'll lose all your points.<br />Are
+                    you sure?
+                </div>
+
+                <!-- modal cta -->
+                <div class="cta">
+                    <a class="btn btn_primary" href="#menu_page" navigation-type="animation" animation-type="game_out">
+                        <img src="./assets/img/boton4.png" alt="quick">
+                            
+                    </a>
+                    <a class="btn btn_secondary" href="#main_page" navigation-type="modal" animation-type="confirm_modal_out">
+                        <img src="./assets/img/boton5.png" alt="cancelar">
+                            
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div id="swiper_page" class="swiper_section full_window">
+
+            <div class="swiper-wrapper">
+
+            <!-- 
+                PÁGINA DE SETTINGS
+                
+                Página para modificar settings
+                
+                -->
+            <section id="settings_page" class="swiper_item swiper-slide">
+                <header class="header">
+                    <h2>Settings</h2>
+                </header>
+
+                <div class="main">
+                    <div class="alinear">
+                        <div class="agrupar">
+                            <img src="./assets/img/volume.ico" class="icono" alt="volume_icono">
+                            <p>Background music</p>
+                        </div>
+                        <img src="./assets/img/check.png" class="check" lt="chequear">
+                    </div>
+
+                    <div class="alinear">
+                        <div class="agrupar">
+                            <img src="./assets/img/music_note.ico" class="icono" alt="nota_icono">
+                            <p>Action sounds</p>
+                        </div>
+                        <img src="./assets/img/check.png" class="check" alt="chequear">
+                    </div>
+                    
+                    
+                     
+                </div>
+
+                <footer class="footer">
+                    <a href="#menu_page" navigation-type="swipe">
+                        <img src="./assets/img/volver.png" class="volver" alt="volver_menu">
+                    </a>
+                </footer>
+            </section>
+
+
+
+
+
+
+            <!-- 
+                MENU PAGE
+                
+                Página de menu
+                
+                -->
+            <section id="menu_page" class="swiper_item swiper-slide">
+                <header class="header">
+                    <h1>Shaped Game!</h1>
+                    <h3>get in Shape!!</h3>
+                </header>
+                <div class="slider">
+                    <div class="slider_items">
+                        <div class="slider_item">
+                            <svg width="88" height="110" viewBox="0 0 88 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="25.5" y1="104.93" x2="25.5" y2="83" stroke="black" stroke-width="3"/>
+                                <line x1="63.5" y1="104.93" x2="63.5" y2="83" stroke="black" stroke-width="3"/>
+                                <line x1="25.8321" y1="104.248" x2="19.8321" y2="108.248" stroke="black" stroke-width="3"/>
+                                <line x1="69.168" y1="108.248" x2="63.1679" y2="104.248" stroke="black" stroke-width="3"/>
+                                <rect x="1.5" y="1.5" width="85" height="85" rx="42.5" fill="#2BFBEE" stroke="black" stroke-width="3"/>
+                                <g class="face">
+                                    <line x1="18" y1="38.5" x2="70" y2="38.5" stroke="black" stroke-width="3"/>
+                                    <ellipse cx="56.1377" cy="42.1071" rx="2.13768" ry="2.10714" fill="#050505"/>
+                                    <ellipse cx="30.1377" cy="42.1071" rx="2.13768" ry="2.10714" fill="#0C0B0B"/>
+                                    <line x1="35.9844" y1="54" x2="52.0156" y2="54" stroke="black" stroke-width="3"/>
+                                </g>
+                            </svg>                        
+                                
+                        </div>
+                        <div class="slider_item">
+                            <svg width="118" height="121" viewBox="0 0 118 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M68.0603 12.5007C64.0046 5.57641 53.9954 5.5764 49.9397 12.5007L14.5459 72.929C10.446 79.9288 15.494 88.7357 23.6061 88.7357H94.3939C102.506 88.7357 107.554 79.9288 103.454 72.929L68.0603 12.5007Z" fill="#2BFBC9" stroke="#010101" stroke-width="3"/>
+                                <g class="face">
+                                    <line y1="-1.5" x2="8.0005" y2="-1.5" transform="matrix(0.656161 -0.754621 0.763873 0.645366 63.2754 45.6516)" stroke="black" stroke-width="3"/>
+                                    <line y1="-1.5" x2="7.81865" y2="-1.5" transform="matrix(0.656179 0.754605 -0.76386 0.645382 48.7391 40.4572)" stroke="black" stroke-width="3"/>
+                                    <ellipse cx="67.9783" cy="45.9357" rx="2.13768" ry="2.10714" fill="#050505"/>
+                                    <ellipse cx="49.1667" cy="45.9357" rx="2.13768" ry="2.10714" fill="#050505"/>
+                                    <line y1="-1.5" x2="8.93002" y2="-1.5" transform="matrix(0.759359 -0.650671 0.987803 0.155711 52.6167 59.405)" stroke="black" stroke-width="3"/>
+                                    <line y1="-1.5" x2="8.93002" y2="-1.5" transform="matrix(0.75936 0.650671 -0.987803 0.155711 55.5001 53.5378)" stroke="black" stroke-width="3"/>
+                                </g>
+                                <line x1="42.1087" y1="110.43" x2="42.1087" y2="88.5" stroke="black" stroke-width="3"/>
+                                <line x1="76.3116" y1="110.43" x2="76.3116" y2="88.5" stroke="black" stroke-width="3"/>
+                                <line y1="-1.5" x2="15.8262" y2="-1.5" transform="matrix(-0.810435 0.585828 -0.596895 -0.802319 41.8986 108.729)" stroke="black" stroke-width="3"/>
+                                <line y1="-1.5" x2="15.8262" y2="-1.5" transform="matrix(-0.810474 -0.585774 0.596841 -0.802359 89.7829 118)" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="slider_item">
+                            <svg width="87" height="113" viewBox="0 0 87 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="24.5" y1="107.93" x2="24.5" y2="86" stroke="black" stroke-width="3"/>
+                                <line x1="62.5" y1="107.93" x2="62.5" y2="86" stroke="black" stroke-width="3"/>
+                                <rect x="1.5" y="1.5" width="84" height="84" rx="10.5" fill="#F866CF" stroke="black" stroke-width="3"/>
+                                <g class="face">
+                                    <path d="M35 47V47C35 49.7614 37.2386 52 40 52H40.3429H45.2H47.6286V52C50.0428 52 52 50.0428 52 47.6286V47" stroke="black" stroke-width="3"/>
+                                    <path d="M39 37V36.7143C39 34.1107 36.8893 32 34.2857 32V32H30H27.8571V32C25.7269 32 24 33.7269 24 35.8571V37" stroke="black" stroke-width="3"/>
+                                    <path d="M63 37V36.0857C63 33.8292 61.1708 32 58.9143 32V32H55.2H53.3429V32C51.4966 32 50 33.4966 50 35.3429V37" stroke="black" stroke-width="3"/>
+                                </g>
+                                <line x1="24.8321" y1="107.248" x2="18.8321" y2="111.248" stroke="black" stroke-width="3"/>
+                                <line x1="68.168" y1="111.248" x2="62.1679" y2="107.248" stroke="black" stroke-width="3"/>
+                            </svg>
+                                
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <footer class="footer">
+                    <a href="#main_page" navigation-type="animation" animation-type="menu_to_game">
+                        <img src="./assets/img/boton1.png" class="boton1" alt="get_started">
+                            
+                    </a>
+                    <div class="foot_navigation">
+                        <ul class="inline_menu centered">
+                            <li>
+                                <a href="#settings_page" navigation-type="swipe">
+                                    <span class="mdi mdi-settings"></span>
+                                    <span class="label">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#leaderboard_page" navigation-type="swipe">
+                                    <span class="mdi mdi-signal"></span>
+                                    <span class="label">High Scores</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 
+                PÁGINA DE HIGH SCORES
+                
+                Página para meter high scores con PWA
+                
+                -->
+            <section id="leaderboard_page" class="swiper_item swiper-slide">
+                <!-- Leaderboard HighScore -->
+                <section class="hscore">
+                    <header class="header">
+                        <h2>High Score</h2>
+                    </header>
+                    <div class="main">
+                        2014
+                    </div>
+                </section>
+
+                <!-- Leaderboard  -->
+                <section class="lboard">
+                    <header class="header">
+                        <h2>Leaderboard</h2>
+                    </header>
+                    <div class="main">
+                        <div class="lboard_table">
+                            <div id="primero" class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">1</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">2</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">3</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item you">
+                                <div class="agrupo">
+                                    <div class="numero">4</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">5</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">6</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">7</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">8</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="agrupo">
+                                    <div class="numero">9</div>
+                                    <div class="lboard_item_name">
+                                        Carlos Aparicio
+                                    </div>
+                                </div>
+                                <div class="lboard_item_p">123</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Leaderboard back to menu -->
+                <footer class="footer">
+                    <a href="#menu_page" navigation-type="swipe">
+                        <img src="./assets/img/volver.png" class="volver" alt="volver_menu">
+                    </a>
+                </footer>
+            </section>
+
+            </div> <!-- /swipe_wrapper-->
+        </div> <!-- /swipe_section-->
+
+
+
+
+
+
+
+        <!-- 
+            SPINNER
+            
+            Por si se necesita a la hora de hacer un spinner de carga
+            
+            -->
+        <section id="modal_loading_spinner" class="spinner_window">
+            <!-- Spinner -->
+            <span class="spinner">
+                <div class="mdi mdi-loading mdi-spin"></div>
+            </span>
+        </section>
+
+
+    </div>
+
+    <!-- libs -->
+    <script src="./app/libs/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="./app/libs/anime.min.js"></script>
+
+    <!-- game -->
+    <script src="./app/Game/Game.js"></script>
+    <script src="./app/Game/Entity.js"></script>
+    <script src="./app/Game/Character.js"></script>
+    <script src="./app/Game/Player.js"></script>
+    <script src="./app/Game/Opponent.js"></script>
+    <script src="./app/Game/Shot.js"></script>
+    <script src="./app/Game/utils.js"></script>
+
+    <!-- ui stuff -->
+    <script src="./app/Animations.js"></script>
+    <script src="./app/Navigation.js"></script>
+    <script src="./app/UI.js"></script>
+
+    <!-- inits -->
+    <script src="./app/main.js"></script>
+</body>
+
+</html>
