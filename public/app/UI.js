@@ -35,7 +35,7 @@ let initSwiper = () => {
     swiper = new Swiper(swipeSection, {
         initialSlide: 1,  /* Parámetros swiper, Número de índice de la diapositiva inicial.*/
         slidesPerView: 1,  /*para que se muestre una sola pagina */
-        spaceBetween: 35,  /*espaciado entre los slides */
+        spaceBetween: 40,  /*espaciado entre los slides */
         
     });
 };

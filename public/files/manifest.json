@@ -1,6 +1,6 @@
 {
-    "name": "Peliculas",
-    "short_name": "Pelis",
+    "name": "Shooter Game",
+    "short_name": "Game",
     "icons": [
         { "src": "icons/camera192.png",
           "sizes": "192x192",
@@ -22,5 +22,5 @@
     "start_url": "/index.html",
     "display": "fullscreen",
     "background_color": "#333333",
-    "theme_color": "#fafafa"
+    "theme_color": "#6200ee"
 }
