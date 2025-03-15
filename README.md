@@ -10,7 +10,9 @@
 ![img](/assets/juego5.png)
 ![img](/assets/juego6.png)
 ![img](/assets/juego7.png)
-![img](/assets/juego8.png)
+<p align="center">
+<br><img src="/assets/juego8.png">
+</p>
 
 ## 📄Descripción del proyecto
 
