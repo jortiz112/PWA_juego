@@ -128,11 +128,13 @@ como prefieras tú.
 
 ## 🌀Tecnologías Utilizadas
 
-✔️HTML
+✔️HTML5
 
-✔️CSS
+✔️CSS3
 
 ✔️JavaScript
+
+✔️SCSS
 
 ## 💻Instalación
 
