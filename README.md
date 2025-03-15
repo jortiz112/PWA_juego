@@ -22,28 +22,28 @@ Realizar el ​mapa de sitio, los wireframes​ y el ​prototipo​ de un juego
 
 MAPA DE SITIO Y PROTOTIPADO
 
-El mapa de sitio y el proceso completo de prototipado se realizará con figma. su apariencia deberá contener
-lo siguiente:
+El mapa de sitio y el proceso completo de prototipado se realizará con figma. su apariencia deberá
+contener lo siguiente:
 
 1) Deben generarse cuatro páginas con figma: sitemap, wireframes, design system y prototipe.
 2) El sitemap debe incluir las páginas que se generen y la relación entre ellas.
-3) Los  wireframes  deben  incluir  los  planos  de  pantalla  y  la  estructura  de  cada  uno  de  ellos,
-   tratando  de  acercarnos  lo  máximo  posible  al  tipo  de  componentes  que  tendrán  y  su
-   distribución. Es importante tener en cuenta el dispositivo para el que se esté diseñando.
-4) Se debe generar así mismo la navegación entre pantallas, para lo que se recomienda empezar  a generarla
-   en la página de los wireframes.
+3) Los  wireframes  deben  incluir  los  planos  de  pantalla  y  la  estructura  de  cada  uno  de
+   ellos, tratando  de  acercarnos  lo  máximo  posible  al  tipo  de  componentes  que  tendrán  y
+   su distribución. Es importante tener en cuenta el dispositivo para el que se esté diseñando.
+4) Se debe generar así mismo la navegación entre pantallas, para lo que se recomienda empezar  a
+   generarla en la página de los wireframes.
 5) La página de design system incluirá como mínimo el diseño de:
    ○ Niveles de texto
    ○ Colores
    ○ Layout
    ○ Botones primarios y secundarios
    ○ Personajes del juego y disparos
-6) El  prototipo  acabado  se  creará  aplicando  el sistema de diseño a los wireframes navegables en  una
-   página  aparte.  En  este  prototipo  es  importante  diseñar  y  dejar  definidas  las  transiciones
-   entre pantallas y el resto de animaciones clave de la intefaz gráfica.
+6) El  prototipo  acabado  se  creará  aplicando  el sistema de diseño a los wireframes navegables en
+   una página  aparte.  En  este  prototipo  es  importante  diseñar  y  dejar  definidas  las
+   transiciones entre pantallas y el resto de animaciones clave de la intefaz gráfica.
     
-Sobre el juego que hemos diseñado anteriormente, vamos a abordar la implementación del juego, teniendo en
-cuenta, como en otros ejercicios, que algunas partes ya están realizadas, incluso nos pueden ayudar a
+Sobre el juego que hemos diseñado anteriormente, vamos a abordar la implementación del juego, teniendo
+en cuenta, como en otros ejercicios, que algunas partes ya están realizadas, incluso nos pueden ayudar a
 proseguir con nuestro ejercicio. Tenemos varias fases. En el siguiente ejercicio vamos a tener que realizar
 varias fases para demostrar lo que hemos aprendido en el proyecto. 
 
